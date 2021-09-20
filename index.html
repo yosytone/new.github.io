@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	 <meta charset="utf-8">
+ 	 <title>web1!</title>
+
+		<style>
+			.hclass
+			{
+			background-color: #76c8bf;
+			padding: 30px 40px;
+			color: white;
+			text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="start" class="hclass">
+			<h1 >ЗАДАНИЕ-1</h1>
+			<h2 > Григорьев Артем 2 Курс</h2>
+		</div>
+
+		<ol>
+			<li><a href="http://example.com"> абсолютную гиперссылку на главную страницу сайта example.com; </a></li>
+			<li><a href="https://example.com/html"> абсолютную на главную сайта example.com в протоколе https; </a></li>
+			<li><a href="ftp://example.com/download.zip">ссылку на файл на сервере FTP без авторизации</a></li>
+			<li><a href="ftp://log:password@example.com/download.zip">ссылку на файл на сервере FTP с авторизацией; </a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Differential_equation#toc"> ссылку на фрагмент страницы некоторого сайта</a></li>
+			<li><a href="index.html#site"> ссылку на фрагмент текущей страницы</a></li>
+			<li><a href="http://example.com?productid=1234 ">ссылку с двумя параметрами в URL</a></li>
+			<li>список ссылок основной навигации сайта с подписями title
+				<ul>
+					<li><a href="#start" title="главная">ссылка 1</a></li>
+					<li><a href="#forum" title="форма">ссылка 2</a></li>
+					<li><a href="#site" title="отправить">ссылка 3</a></li>
+				</ul>
+			</li>
+			<li><a>ссылка без href </a></li>
+			<li><a href=" " title="пустой">ссылку с пустым href;</a></li>
+			<li><a href="http://example.com" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+			<li><a href="http://example.com" rel="noindex">запрещенную для индексации поисковиками</a></li>
+			<li>Lorem ipsum dolor sit amet, <a href="ex.html">consectetur</a> adipiscing elit. Integer tincidunt lorem at egestas feugiat. Quisque ac 					leo nec purus vestibulum aliquet. Proin a massa in turpis aliquam hendrerit ut vel purus. Nullam odio lorem, lobortis eu quam id, e					gestas semper ante. Nam dictum accumsan sem posuere scelerisque. Etiam id nibh pellentesque, blandit nisi eu, luctus enim. Nam a orci  			  		mauris laoreet consectetur. Cras elementum in nunc nec placerat. Aliquam felis dolor, tincidunt ac leo sed, tristique ornare nulla. 				Aenean nec nisl aliquet, venenatis elit vitae, sollicitudin tellus. Nam mattis justo non ligula suscipit, sit amet sagittis purus 					pretium. In metus elit, semper quis urna id, lobortis blandit velit. Suspendisse potenti. Donec nec risus at elit consectetur 						scelerisque eu sit amet augue. Nunc velit mi, efficitur sit amet fringilla ut, mattis quis leo.</li>
+			<li><p><a href="sample.html"><img src="https://sun9-26.userapi.com/NaFS9lECWFxcgxbgs6CiZTD-hTdfLwQ1PlA2sQ/f7E7eOVpHVs.jpg" width="150"
+   height="150" alt="Пример"></a></p></li>
+			<li><img src="un.jpg" width="100" height="50" alt="Навигация по сайту"
+    usemap="#Navigation"><map id="Navigation" name="Navigation">
+    			<area shape="rect" coords="10,10,45,40" href="inform.html" alt="Информация">
+				<area shape="circle" coords="75,25,20" href="inform.html" alt="Информация">
+				</map>
+			</li>
+			<li><a href="page.html">относительную на страницу в текущем каталоге</a></li>
+			<li><a href="about/page.html">относительную на страницу в каталоге about</a></li>
+			<li><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+			<li><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+			<li><a href="index.html">сокращенную на главную</a></li>
+			<li><a href="#site"> сокращенную ссылку на внутреннюю </a></li>
+		</ol>
+
+		<a id="forum"></a>
+
+		<label>
+	    	Введите свое имя:<br />
+	    	<input name="field-name-1"
+	     	value="" />
+		</label><br />
+
+		<label>
+			Ваш email:<br />
+			<input name="field-email"
+				value="test@example.com"
+				type="email" />
+		</label><br />
+
+		<label>
+			Дата рождения:<br />
+			 <input name="field-date"
+			value="2020-09-14"
+			type="date" />
+		</label><br />
+
+
+		Ваш Пол:<br />
+		<label><input type="radio" checked="checked"
+			 name="radio-group-1" value="Значение1" />
+				М</label>
+		<label><input type="radio"
+			 name="radio-group-1" value="Значение2" />
+				Ж</label><br />
+
+
+		 Количество конечностей:<br />
+		<label><input type="radio" checked="checked"
+			 name="radio-group-1" value="Значение1" />
+			  1</label>
+		<label><input type="radio"
+			 name="radio-group-1" value="Значение2" />
+			  2</label><br />
+		<label><input type="radio"
+ 				 name="radio-group-1" value="Значение2" />
+ 				  отсутствуют :(</label><br />
+
+			 <label>
+			        Выберите вашу сверхспособность:
+			        <br />
+			        <select name="field-name-4[]"
+			          multiple="multiple">
+			          <option value="Значение1">бессмертие</option>
+			          <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+			          <option value="Значение3" selected="selected">левитация</option>
+			        </select>
+			      </label><br />
+
+						<label>
+			 Биография:<br />
+			 <textarea name="field-name-2">начальное значение</textarea>
+		 </label><br />
+
+		 Чекбокс:<br />
+		 <label><input type="checkbox" checked="checked"
+			 name="check-1" />
+			 ""Я с контрактом ознакомлен""</label><br />
+
+			 <input type="submit" value="Отправить" />
+
+		<a id="site"></a>
+
+	</body>
+</html>
